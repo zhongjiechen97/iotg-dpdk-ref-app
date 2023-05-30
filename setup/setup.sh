@@ -109,7 +109,7 @@ setup_taprio()
 	done
 
 	NUM_TC=$(expr $NUM_TC + 1)
-
+	
 	# i225 does not support basetime in the future
 	if [[ $PLAT == i225* ]]; then
 		BASE=$(date +%s%N)
